@@ -1368,3 +1368,22 @@ img {
     font-size: 13px;
   }
 }
+/* BACKGROUND HERO BERGANTIAN */
+.hero-home {
+  animation: bgGanti 15s infinite;
+}
+
+@keyframes bgGanti {
+  0%,
+  33% {
+    background-image: url("../img/welder.jpg");
+  }
+  34%,
+  66% {
+    background-image: url("../img/bg_profil_bca.jpg");
+  }
+  67%,
+  100% {
+    background-image: url("../img/bg_klien_bca.jpg");
+  }
+}
