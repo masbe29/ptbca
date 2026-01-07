@@ -1387,3 +1387,40 @@ img {
     background-image: url("../img/bg_klien_bca.jpg");
   }
 }
+/* =========================================================
+   FIX BLOG: konten (judul) tidak ketiban header fixed
+   - Berlaku untuk halaman NON-home (yang tidak punya .hero-home)
+   ========================================================= */
+
+/* 1) Kasih ruang di atas konten */
+main,
+.page-content,
+.blog-content,
+.article,
+.section {
+  padding-top: calc(var(--header-height) + var(--spacing-md));
+}
+
+/* 2) Khusus halaman HOME (ada .hero-home), jangan dikasih padding (biar hero tetap nempel atas) */
+body:has(.hero-home) main,
+body:has(.hero-home) .page-content,
+body:has(.hero-home) .blog-content,
+body:has(.hero-home) .article,
+body:has(.hero-home) .section {
+  padding-top: 0;
+}
+
+/* 3) Biar header blog rapi (background putih + teks gelap) */
+body:not(:has(.hero-home)) .site-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body:not(:has(.hero-home)) .site-nav .menu a {
+  color: var(--dark);
+}
+
+body:not(:has(.hero-home)) .nav-toggle {
+  color: var(--dark);
+}
