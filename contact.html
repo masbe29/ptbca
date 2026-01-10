@@ -88,7 +88,7 @@
       </div>
     </section>
 
-    <!-- CONTACT + FORM -->
+    <!-- CONTACT -->
     <section class="section" data-aos="fade-up">
       <div class="container">
         <div class="grid-2" style="align-items: flex-start; gap: 40px">
@@ -96,8 +96,8 @@
           <div>
             <h2 style="margin-bottom: 10px">Informasi Kontak</h2>
             <p style="font-size: 14px; color: #666; margin-bottom: 20px">
-              Anda dapat menghubungi kami melalui telepon, email, atau mengisi
-              formulir di samping. Tim kami akan merespons secepat mungkin.
+              Anda dapat menghubungi kami melalui telepon/WhatsApp atau email.
+              Tim kami akan merespons secepat mungkin pada jam kerja.
             </p>
 
             <div class="contact-cards">
@@ -114,9 +114,15 @@
               <div class="card">
                 <h4><i class="fa-solid fa-phone"></i> Telepon / WhatsApp</h4>
                 <p style="font-size: 14px; color: #555; margin-top: 6px">
-                  Telp / WA:
+                  Telp:
                   <a href="tel:+628123415642">+62 812-3415-642</a><br />
-                  Klik untuk langsung menelepon atau chat.
+                  WhatsApp:
+                  <a
+                    href="https://wa.me/628123415642"
+                    target="_blank"
+                    rel="noopener"
+                    >Chat WhatsApp</a
+                  >
                 </p>
               </div>
 
@@ -141,49 +147,36 @@
             </div>
           </div>
 
-          <!-- Form Kontak -->
+          <!-- Aksi Kontak (Form dihapus) -->
           <div>
-            <h2 style="margin-bottom: 10px">Kirim Pesan</h2>
+            <h2 style="margin-bottom: 10px">Hubungi Kami</h2>
             <p style="font-size: 14px; color: #666; margin-bottom: 20px">
-              Isi formulir berikut untuk mengirimkan pertanyaan atau permintaan
-              penawaran.
+              Untuk pertanyaan atau permintaan penawaran, silakan hubungi kami
+              melalui WhatsApp atau Email.
             </p>
 
-            <form
-              class="form"
-              id="contact-form"
-              action="send_mail.php"
-              method="POST"
-            >
-              <input
-                type="text"
-                name="nama"
-                placeholder="Nama lengkap"
-                required
-              />
-              <input type="email" name="email" placeholder="Email" required />
-              <input
-                type="text"
-                name="subjek"
-                placeholder="Subjek / Perihal"
-                required
-              />
-              <textarea
-                name="pesan"
-                rows="5"
-                placeholder="Tulis pesan Anda di sini..."
-                required
-              ></textarea>
-              <button type="submit" class="btn rotating-cta-item">
-                Kirim Pesan
-              </button>
-            </form>
+            <div class="contact-actions">
+              <a
+                class="btn btn-wa"
+                href="https://wa.me/628123415642?text=Halo%20PT.%20Bahtera%20Cipta%20Anugrah,%0A%0ASaya%20ingin%20bertanya%20tentang:%0A-%20Nama:%20%0A-%20Perihal:%20%0A-%20Pesan:%20"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-whatsapp"></i> Hubungi via WhatsApp
+              </a>
 
-            <p style="font-size: 12px; color: #999; margin-top: 8px">
-              *Pesan Anda akan dikirim langsung ke email resmi PT. Bahtera Cipta
-              Anugrah. Kami akan merespons secepat mungkin pada jam kerja.
+              <a
+                class="btn btn-email"
+                href="mailto:pt.bahteraciptaanugrah@gmail.com?subject=Permintaan%20Informasi%20/%20Penawaran&body=Halo%20PT.%20Bahtera%20Cipta%20Anugrah,%0A%0ASaya%20ingin%20bertanya%20tentang:%0A%0ANama:%20%0AEmail:%20%0APerihal:%20%0APesan:%20%0A"
+              >
+                <i class="fa-solid fa-envelope"></i> Kirim Email
+              </a>
+            </div>
+
+            <p style="font-size: 12px; color: #999; margin-top: 10px">
+              Jam operasional: Senin–Jumat 08.00–17.00 WIB, Sabtu 08.00–12.00
+              WIB.
             </p>
-            <div id="form-status" class="form-status" aria-live="polite"></div>
           </div>
         </div>
       </div>
