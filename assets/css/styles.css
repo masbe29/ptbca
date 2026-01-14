@@ -1424,3 +1424,233 @@ body:not(:has(.hero-home)) .site-nav .menu a {
 body:not(:has(.hero-home)) .nav-toggle {
   color: var(--dark);
 }
+/* =========================
+   CONTACT FINAL (NO JS)
+   ========================= */
+
+/* Biar teks hero lebih kebaca */
+.page-kontak .hero::before {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Background section kontak biar ga flat */
+.contact-section {
+  background: linear-gradient(
+    135deg,
+    rgba(45, 53, 122, 0.05) 0%,
+    rgba(232, 169, 99, 0.06) 100%
+  );
+}
+
+/* Fix: kamu punya rule :has(.hero-home) yang bikin padding-top .section jadi 0 */
+.page-kontak .section {
+  padding-top: var(--spacing-xxl);
+}
+
+.contact-grid {
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Judul & deskripsi */
+.contact-title {
+  margin-bottom: 10px;
+}
+
+.contact-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  max-width: 560px;
+}
+
+/* Card kiri */
+.contact-card p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 6px;
+  line-height: 1.7;
+}
+
+.contact-label {
+  color: #777;
+  font-weight: 600;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Panel kanan */
+.contact-panel {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: calc(var(--header-height) + 20px);
+}
+
+.contact-actions {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-actions .btn {
+  width: 100%;
+  max-width: none;
+}
+
+.contact-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 18px 0;
+}
+
+/* Tombol WA + Email */
+.btn-wa {
+  background: #25d366;
+  color: var(--white);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.25);
+}
+
+.btn-wa:hover {
+  background: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(37, 211, 102, 0.35);
+}
+
+.btn-email {
+  background: var(--white);
+  color: var(--primary);
+  border: 2px solid rgba(45, 53, 122, 0.45);
+}
+
+.btn-email:hover {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Quick info */
+.contact-quick {
+  display: grid;
+  gap: 12px;
+}
+
+.quick-item {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(45, 53, 122, 0.02);
+}
+
+.quick-item i {
+  color: var(--secondary);
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.quick-title {
+  font-weight: 800;
+  color: var(--dark);
+  margin: 0;
+  font-size: 14px;
+}
+
+.quick-sub {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.quick-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+/* Steps */
+.contact-steps {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(
+    135deg,
+    rgba(232, 169, 99, 0.12) 0%,
+    rgba(45, 53, 122, 0.06) 100%
+  );
+  border: 1px solid rgba(45, 53, 122, 0.12);
+}
+
+.steps-title {
+  margin: 0 0 8px;
+  font-weight: 900;
+  color: var(--dark);
+  font-size: 14px;
+}
+
+.steps-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* FAQ (native, tanpa JS) */
+.contact-faq {
+  margin-top: 16px;
+}
+
+.faq-title {
+  margin: 0 0 10px;
+  font-weight: 900;
+  color: var(--dark);
+  font-size: 14px;
+}
+
+.contact-faq details {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-faq summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--primary);
+  list-style: none;
+}
+
+.contact-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.contact-faq details p {
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* Sticky off di tablet/mobile */
+@media (max-width: 991px) {
+  .contact-panel {
+    position: static;
+  }
+}
