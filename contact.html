@@ -55,7 +55,7 @@
 
         <nav id="primary-navigation" class="site-nav">
           <ul class="menu">
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="profil.html">Profil</a></li>
             <li><a href="layanan.html">Layanan</a></li>
             <li><a href="fasilitas.html">Fasilitas</a></li>
@@ -68,10 +68,9 @@
       </div>
     </header>
 
-    <!-- Hero Slider Home -->
+    <!-- Hero -->
     <section class="hero hero-home" id="home">
       <div class="slides">
-        <!-- Slide 3 (jadi satu-satunya slide & aktif) -->
         <div class="slide slide-3 is-active">
           <div class="hero-inner">
             <span class="badge">
@@ -88,47 +87,49 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section" data-aos="fade-up">
+    <!-- CONTACT (FINAL) -->
+    <section class="section contact-section" data-aos="fade-up">
       <div class="container">
-        <div class="grid-2" style="align-items: flex-start; gap: 40px">
+        <div class="grid-2 contact-grid">
           <!-- Info Kontak -->
           <div>
-            <h2 style="margin-bottom: 10px">Informasi Kontak</h2>
-            <p style="font-size: 14px; color: #666; margin-bottom: 20px">
+            <h2 class="contact-title">Informasi Kontak</h2>
+            <p class="contact-desc">
               Anda dapat menghubungi kami melalui telepon/WhatsApp atau email.
-              Tim kami akan merespons secepat mungkin pada jam kerja.
+              Tim kami akan merespons pada jam kerja.
             </p>
 
             <div class="contact-cards">
-              <div class="card">
+              <div class="card contact-card">
                 <h4>
                   <i class="fa-solid fa-location-dot"></i> Alamat Kantor /
                   Workshop
                 </h4>
-                <p style="font-size: 14px; color: #555; margin-top: 6px">
-                  Jl. Raya Kerek - Temandang No. 02, Merakurak - Tuban
-                </p>
+                <p>Jl. Raya Kerek - Temandang No. 02, Merakurak - Tuban</p>
+                <a class="contact-link" href="#lokasi">
+                  <i class="fa-solid fa-location-arrow"></i> Lihat peta lokasi
+                </a>
               </div>
 
-              <div class="card">
+              <div class="card contact-card">
                 <h4><i class="fa-solid fa-phone"></i> Telepon / WhatsApp</h4>
-                <p style="font-size: 14px; color: #555; margin-top: 6px">
-                  Telp:
+                <p>
+                  <span class="contact-label">Telp:</span>
                   <a href="tel:+628123415642">+62 812-3415-642</a><br />
-                  WhatsApp:
+                  <span class="contact-label">WhatsApp:</span>
                   <a
                     href="https://wa.me/628123415642"
                     target="_blank"
                     rel="noopener"
-                    >Chat WhatsApp</a
                   >
+                    Chat WhatsApp
+                  </a>
                 </p>
               </div>
 
-              <div class="card">
+              <div class="card contact-card">
                 <h4><i class="fa-solid fa-envelope"></i> Email</h4>
-                <p style="font-size: 14px; color: #555; margin-top: 6px">
+                <p>
                   <a href="mailto:pt.bahteraciptaanugrah@gmail.com">
                     pt.bahteraciptaanugrah@gmail.com </a
                   ><br />
@@ -136,9 +137,9 @@
                 </p>
               </div>
 
-              <div class="card">
+              <div class="card contact-card">
                 <h4><i class="fa-solid fa-clock"></i> Jam Operasional</h4>
-                <p style="font-size: 14px; color: #555; margin-top: 6px">
+                <p>
                   Senin – Jumat: 08.00 – 17.00 WIB<br />
                   Sabtu: 08.00 – 12.00 WIB<br />
                   (Minggu & hari libur nasional: tutup)
@@ -147,43 +148,109 @@
             </div>
           </div>
 
-          <!-- Aksi Kontak (Form dihapus) -->
-          <div>
-            <h2 style="margin-bottom: 10px">Hubungi Kami</h2>
-            <p style="font-size: 14px; color: #666; margin-bottom: 20px">
-              Untuk pertanyaan atau permintaan penawaran, silakan hubungi kami
-              melalui WhatsApp atau Email.
+          <!-- Panel Aksi (tanpa form, NO JS) -->
+          <div class="contact-panel">
+            <h2 class="contact-title">Hubungi Kami</h2>
+            <p class="contact-desc">
+              Paling cepat via WhatsApp. Anda juga bisa kirim email untuk
+              dokumen atau permintaan resmi.
             </p>
 
             <div class="contact-actions">
               <a
                 class="btn btn-wa"
-                href="https://wa.me/628123415642?text=Halo%20PT.%20Bahtera%20Cipta%20Anugrah,%0A%0ASaya%20ingin%20bertanya%20tentang:%0A-%20Nama:%20%0A-%20Perihal:%20%0A-%20Pesan:%20"
+                href="https://wa.me/628123415642?text=Halo%20PT.%20Bahtera%20Cipta%20Anugrah,%0A%0ASaya%20ingin%20bertanya%20tentang:%0A-%20Nama:%20%0A-%20Lokasi%20Proyek:%20%0A-%20Kebutuhan:%20%0A-%20Pesan:%20"
                 target="_blank"
                 rel="noopener"
               >
-                <i class="fa-brands fa-whatsapp"></i> Hubungi via WhatsApp
+                <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp (Fast
+                Response)
               </a>
 
               <a
                 class="btn btn-email"
-                href="mailto:pt.bahteraciptaanugrah@gmail.com?subject=Permintaan%20Informasi%20/%20Penawaran&body=Halo%20PT.%20Bahtera%20Cipta%20Anugrah,%0A%0ASaya%20ingin%20bertanya%20tentang:%0A%0ANama:%20%0AEmail:%20%0APerihal:%20%0APesan:%20%0A"
+                href="mailto:pt.bahteraciptaanugrah@gmail.com?subject=Permintaan%20Informasi%20/%20Penawaran&body=Halo%20PT.%20Bahtera%20Cipta%20Anugrah,%0A%0ASaya%20ingin%20bertanya%20tentang:%0A%0ANama:%20%0AEmail:%20%0ALokasi%20Proyek:%20%0AKebutuhan:%20%0APesan:%20%0A"
               >
                 <i class="fa-solid fa-envelope"></i> Kirim Email
               </a>
             </div>
 
-            <p style="font-size: 12px; color: #999; margin-top: 10px">
-              Jam operasional: Senin–Jumat 08.00–17.00 WIB, Sabtu 08.00–12.00
-              WIB.
-            </p>
+            <div class="contact-divider"></div>
+
+            <!-- Info cepat -->
+            <div class="contact-quick">
+              <div class="quick-item">
+                <i class="fa-solid fa-bolt"></i>
+                <div>
+                  <p class="quick-title">Respon pada jam kerja</p>
+                  <p class="quick-sub">
+                    Senin–Jumat 08.00–17.00 • Sabtu 08.00–12.00
+                  </p>
+                </div>
+              </div>
+
+              <div class="quick-item">
+                <i class="fa-solid fa-file-lines"></i>
+                <div>
+                  <p class="quick-title">Agar cepat diproses</p>
+                  <p class="quick-sub">
+                    Siapkan: jenis proyek • lokasi • target waktu • gambar/BOQ
+                    (jika ada)
+                  </p>
+                </div>
+              </div>
+
+              <div class="quick-item">
+                <i class="fa-solid fa-location-arrow"></i>
+                <div>
+                  <p class="quick-title">Butuh datang ke lokasi?</p>
+                  <a class="quick-link" href="#lokasi">Lihat peta lokasi</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Alur -->
+            <div class="contact-steps">
+              <p class="steps-title">Alur cepat</p>
+              <ol class="steps-list">
+                <li>Chat via WhatsApp dan jelaskan kebutuhan</li>
+                <li>Kami review spesifikasi & dokumen</li>
+                <li>Anda menerima estimasi/penawaran</li>
+              </ol>
+            </div>
+
+            <!-- FAQ (tanpa JS) -->
+            <div class="contact-faq">
+              <p class="faq-title">FAQ singkat</p>
+
+              <details>
+                <summary>Apakah bisa minta penawaran cepat?</summary>
+                <p>
+                  Bisa. Kirim info proyek + lokasi + target waktu. Jika ada
+                  gambar/BOQ akan lebih cepat.
+                </p>
+              </details>
+
+              <details>
+                <summary>Jam kerja kapan?</summary>
+                <p>Senin–Jumat 08.00–17.00 WIB, Sabtu 08.00–12.00 WIB.</p>
+              </details>
+
+              <details>
+                <summary>Apakah melayani luar kota?</summary>
+                <p>
+                  Bisa. Sampaikan lokasi proyek dan kebutuhan supaya kami bisa
+                  cek teknis & logistik.
+                </p>
+              </details>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- MAP LOKASI -->
-    <section class="section" data-aos="fade-up">
+    <section class="section" id="lokasi" data-aos="fade-up">
       <div class="container">
         <h2 style="text-align: center; margin-bottom: 16px">Lokasi Kami</h2>
         <p
@@ -406,7 +473,6 @@
     </a>
 
     <!-- Scripts -->
-    <!-- AOS (Animate On Scroll) -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
       // Facilities Slider
@@ -439,7 +505,6 @@
           showSlide(currentSlide - 1);
         }
 
-        // Event listeners
         if (nextBtn) nextBtn.addEventListener("click", nextSlide);
         if (prevBtn) prevBtn.addEventListener("click", prevSlide);
 
@@ -447,9 +512,9 @@
           dot.addEventListener("click", () => showSlide(index));
         });
 
-        // Auto slide (optional)
         setInterval(nextSlide, 5000);
       });
+
       document.addEventListener("DOMContentLoaded", function () {
         const navToggle = document.querySelector(".nav-toggle");
         const siteNav = document.querySelector(".site-nav");
@@ -458,28 +523,14 @@
         const navLinks = document.querySelectorAll(".site-nav a");
         const header = document.querySelector(".site-header");
 
-        // Debug: Cek apakah elemen ditemukan
-        console.log("Nav Toggle:", navToggle);
-        console.log("Site Nav:", siteNav);
-        console.log("Backdrop:", navBackdrop);
+        if (!navToggle || !siteNav) return;
 
-        if (!navToggle || !siteNav) {
-          console.error("Element nav-toggle atau site-nav tidak ditemukan!");
-          return;
-        }
-
-        // Fungsi toggle menu
         function toggleMenu() {
           const isActive = siteNav.classList.contains("active");
-
-          if (isActive) {
-            closeMenu();
-          } else {
-            openMenu();
-          }
+          if (isActive) closeMenu();
+          else openMenu();
         }
 
-        // Fungsi buka menu
         function openMenu() {
           siteNav.classList.add("active");
           if (navBackdrop) {
@@ -489,7 +540,6 @@
           body.style.overflow = "hidden";
           navToggle.setAttribute("aria-expanded", "true");
 
-          // Ubah icon
           const icon = navToggle.querySelector("i");
           if (icon) {
             icon.classList.remove("fa-bars");
@@ -497,7 +547,6 @@
           }
         }
 
-        // Fungsi tutup menu
         function closeMenu() {
           siteNav.classList.remove("active");
           if (navBackdrop) {
@@ -507,7 +556,6 @@
           body.style.overflow = "";
           navToggle.setAttribute("aria-expanded", "false");
 
-          // Ubah icon
           const icon = navToggle.querySelector("i");
           if (icon) {
             icon.classList.remove("fa-xmark");
@@ -515,26 +563,20 @@
           }
         }
 
-        // Event: Klik tombol hamburger
         navToggle.addEventListener("click", function (e) {
           e.preventDefault();
           e.stopPropagation();
           toggleMenu();
         });
 
-        // Event: Klik backdrop
-        if (navBackdrop) {
-          navBackdrop.addEventListener("click", closeMenu);
-        }
+        if (navBackdrop) navBackdrop.addEventListener("click", closeMenu);
 
-        // Event: Klik link dalam menu
         navLinks.forEach(function (link) {
           link.addEventListener("click", function () {
             closeMenu();
           });
         });
 
-        // Event: Tekan tombol ESC
         document.addEventListener("keydown", function (e) {
           if (e.key === "Escape" && siteNav.classList.contains("active")) {
             closeMenu();
@@ -542,7 +584,6 @@
           }
         });
 
-        // Event: Resize window
         let resizeTimeout;
         window.addEventListener("resize", function () {
           clearTimeout(resizeTimeout);
@@ -556,13 +597,11 @@
           }, 200);
         });
 
-        // Set active page
         const currentPage =
           window.location.pathname.split("/").pop() || "index.html";
         navLinks.forEach(function (link) {
           const href = link.getAttribute("href");
           link.classList.remove("active");
-
           if (
             href === currentPage ||
             (currentPage === "" && href === "index.html")
@@ -571,32 +610,18 @@
           }
         });
 
-        // Scroll effect untuk header transparan
         window.addEventListener("scroll", function () {
           const currentScroll = window.pageYOffset;
-
-          if (currentScroll > 50) {
-            header.classList.add("scrolled");
-          } else {
-            header.classList.remove("scrolled");
-          }
+          if (currentScroll > 50) header.classList.add("scrolled");
+          else header.classList.remove("scrolled");
         });
 
-        console.log("Mobile navigation initialized successfully!");
+        AOS.init({ duration: 800, once: true, offset: 120 });
 
-        // Init AOS
-        AOS.init({
-          duration: 800,
-          once: true,
-          offset: 120,
-        });
-
-        // Set tahun copyright otomatis
         document.getElementById("year").textContent = new Date().getFullYear();
       });
     </script>
 
-    <!-- Script slider & lain-lain -->
     <script src="assets/js/main.js" defer></script>
   </body>
 </html>
